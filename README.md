@@ -1,18 +1,21 @@
-Welcome to the Hunt the Wumpus game! You play as an adventurer entering the cave of the
+Welcome to the Hunt the Wumpus game! 
+-
+You play as an adventurer entering the cave of the
 Wumpus, and your goal is to collect the gold treasure in the cave and escape without
 dying. There are different hazards including the Wumpus throughout the cave, so be wary!
 Happy playing!
 
+-----------------------------------------------------------------------------------------
 
 Instructions:
 
 1) In this repository, there is a makefile! This will make compiling much simpler, download this and you can compile with:
 
-make wumpus
+       make wumpus
 
 If you would like to check for memory leaks (for debugging purposes) you can compile with: 
 
-make leak_check
+    make leak_check
 
 2) Run the program with:
 
@@ -56,18 +59,18 @@ an integer outside this range, the program will ask you to re-input a valid valu
  the Gold (G) - this is the room where the gold treasure is being kept. If you walk into this 
                 room, you will automatically pick up the gold.
 
-                The percept for the Gold is: "You see a glimmer nearby."
+    The percept for the Gold is: "You see a glimmer nearby."
 
  the Wumpus (W) - this is the room in which the Wumpus resides. If you enter this room, the
                   Wumpus will wake up and eat you and you will automatically die.
 
-                  The percept for the Wumpus is: "You smell a terrible stench."
+    The percept for the Wumpus is: "You smell a terrible stench."
 
  Stalactites (S) - there are two rooms that have stalactites in them. If you walk into either
                    of these rooms, there is a 50% chance that the stalactites will fall and
                    kill you.
 
-                   The percept for stalactites is: "You hear water dripping."
+    The percept for stalactites is: "You hear water dripping."
 
  Submerged Pool Access (P) - there are two rooms that provide access to the cave's underwater
                              pool system. If you enter one of these rooms, you will automatically
@@ -77,14 +80,18 @@ an integer outside this range, the program will ask you to re-input a valid valu
                              level will deplete by one. If you run out of oxygen, you will drown and die.
                              Your oxygen resets when you resurface from the pool system.
 
-                             The percept for pool access rooms is: "You hear wind blowing." 
+    The percept for pool access rooms is: "You hear wind blowing." 
 
  A menu outlining what actions you can take will also be printed:
 
  W-up
+ 
  A-left
+ 
  S-down
+ 
  D-right
+ 
  f-fire an arrow
 
  The letters on the left are what letters you can enter to take an action. 
@@ -93,19 +100,24 @@ an integer outside this range, the program will ask you to re-input a valid valu
  action, the program will reprompt you for a valid input.
 
  If you choose to enter 'w':
-    - the player will move one room to the north assuming there is no wall.
+ 
+   - the player will move one room to the north assuming there is no wall.
 
  If you choose to enter 'a':
-    - the player will move one room to the west assuming there is no wall.
+ 
+   - the player will move one room to the west assuming there is no wall.
 
  If you choose to enter 's':
-    - the player will move one room to the south assuming there is no wall.
+ 
+   - the player will move one room to the south assuming there is no wall.
 
  If you choose to enter 'd':
-    - the player will move one room to the east assuming there is no wall.
+ 
+   - the player will move one room to the east assuming there is no wall.
 
  If you choose to enter 'f':
-    - you get to fire an arrow! You can choose which direction (same as moving) to shoot the arrow.
+ 
+   - you get to fire an arrow! You can choose which direction (same as moving) to shoot the arrow.
       if your arrow hits the Wumpus, you will kill it! You do not have to worry about it when looking
       for the gold.
       if your arrow misses, there is a 75% chance of the Wumpus waking up and moving to a different
@@ -114,14 +126,12 @@ an integer outside this range, the program will ask you to re-input a valid valu
  Once you collect the gold, you need to make it back to the room you entered the cave at to escape and win,
  so make sure to remember where you started.
 
- - This program also allows you to play again when the game is over.
-
  When the game is over (you either escape with the gold or die in the cave), another menu will be printed:
 
- Would you like to:
- 1: play in the same cave
- 2: play with a different cave
- 3: quit the game entirely
+    Would you like to:
+    1: play in the same cave
+    2: play with a different cave
+    3: quit the game entirely
 
  Playing the same cave would mean you play again with the same cave configuration (same size, events in same place, etc)
  If you want to play in a different cave, the program will once again ask what side length you would like the cave to be
