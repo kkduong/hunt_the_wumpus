@@ -7,6 +7,9 @@ Happy playing!
 
 -----------------------------------------------------------------------------------------
 
+NOTE: this program was compiled using g++ (the makefile takes this into account). If you would like to compile with a different
+compiler, you would need to do the compilation yourself with your knowledge.
+
 Instructions:
 
 1) In this repository, there is a makefile! This will make compiling much simpler, download this and you can compile with:
