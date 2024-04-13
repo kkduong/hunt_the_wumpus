@@ -87,15 +87,11 @@ an integer outside this range, the program will ask you to re-input a valid valu
 
  A menu outlining what actions you can take will also be printed:
 
- W-up
- 
- A-left
- 
- S-down
- 
- D-right
- 
- f-fire an arrow
+        W-up
+        A-left
+        S-down
+        D-right
+        f-fire an arrow
 
  The letters on the left are what letters you can enter to take an action. 
  Only enter 1 letter for this input, as this will take the first character in your input.
